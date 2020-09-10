@@ -32,8 +32,8 @@ apiRequest.onreadystatechange =()=>{
         console.log(response.weather[0]);
 
         const icon = response.weather[0].icon;
-        //const iconUrl = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${icon}.svg`;
-        const iconUrl = `http://openweathermap.org/img/w/${icon}.png`;
+        const iconUrl = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${icon}.svg`;
+        //const iconUrl = `http://openweathermap.org/img/w/${icon}.png`;
         const image = document.getElementById('image');
         image.setAttribute('src', iconUrl);
 
