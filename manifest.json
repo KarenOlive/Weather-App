@@ -1,0 +1,58 @@
+{
+    "name": "Weather 101",
+    "short_name": "Weather",
+    "start_url": "index.html",
+    "display": "standalone",           
+    "background_color": "#133b5c",
+    "theme_color": "#0d53a3",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/images/icon-16x16.png",
+            "type": "image/png",
+            "sizes": "16x16"
+        },
+        {
+            "src": "/images/icon-24x24.png",
+            "type": "image/png",
+            "sizes": "24x24"
+        },
+        {
+            "src": "/images/icon-32x32.png",
+            "type": "image/png",
+            "sizes": "32x32"
+        },
+        {
+            "src": "/images/icon-64x64.png",
+            "type": "image/png",
+            "sizes": "64x64"
+        },
+        {
+            "src": "/images/icon-72x72.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        },
+        {
+            "src": "/images/icon-96x96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "/images/icon-128x128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        
+        {
+            "src": "/images/maskable_icon.png",
+            "type": "image/png",
+            "sizes": "256x256",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/images/icon-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}

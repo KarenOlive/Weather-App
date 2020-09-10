@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+     integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+     <link rel="stylesheet" href="weather-app.css">
+     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+     <link rel="shortcut icon" href="favicon.ico?v=1" type="image/x-icon" />
+    
+    <!--ios support-->
+    <link rel="apple-touch-icon" href="/images/icon-96x96.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#bbe1fa">
+
+    <!--PWA-->
+    <meta name="theme-color" content="#0d53a3">
+    <link rel="manifest" href="manifest.json">
+    <title>Weather App</title>
+    
+</head>
+<body id="bg">
+    <h2>Weather 101</h2>
+    
+    <form id="city-form" class="col-sm-8 offset-sm-2">
+      <div class="form-group">
+        <label for="city">Enter your city here</label> <br>
+        <input type="text" id="city" name="city" size="30" onblur="storeStorage();" placeholder="Enter City.." autofocus required 
+        >
+      </div>
+      <br>
+        
+      <button type="submit" id="submit" name="submit" onclick="getStorage();">Check the weather!</button>
+
+      
+    </form>
+
+    <br>
+    <hr class="rounded">
+    <p id="error-message"></p>
+    <br>
+
+    <section id="city-cards">
+        <div class="container">
+          <div>
+            <span id="city-name"></span><span></span><sup id="country-code"></sup></span>
+
+            <br>
+            <span id="temp"></span><span class="city-temp"></span>
+            
+            <br>
+
+              <img id="image" class="img-fluid" alt="icon depicting current weather.">
+            
+            <p id="report-section" class="message" class="col-sm-8 offset-sm-2 text-center"></p>
+
+          </div>
+          <!--For additional daily forecasts-->
+         <!-- <div id="extra"></div>-->
+
+        </div>
+    </section>
+    <script src="/js/app.js"></script>
+    <script src="/js/weather-app.js"></script> 
+</body>
+</html>
